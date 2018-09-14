@@ -46,17 +46,19 @@ It can be a fun and easy way to check your own hand calculations.
   
   vdW.tabulate_data(data)
   ```
-  The function tabulate_data(a) prints the EOS object as a table using the tabulate python library. tabulate_data converts the
-  the dictionary returned in every single on of the vdW function as a table a human can easily understand, such as the one below.
+  The function tabulate_data(a) prints the EOS object as a table using the tabulate python library. 
+  tabulate_data converts the dictionary returned in every single on of the vdW function as a human-readable table such as the one below.
   
-  Units are Kelvin,Pascals,and cubic meters/mol
-Compound     CAS_ID        Tc    Tc_Error       Pc    Pc_Error        Vc    Vc_Error
------------  --------  ------  ----------  -------  ----------  --------  ----------
-Acetic acid  64-19-7   593           2     5790000       30000  0.000171     2e-06
-Acetone      67-64-1   508.1         0.2   4700000      100000  0.000221     2e-05
-Benzene      71-43-2   562           0.1   4900000       20000  0.000257     1.1e-05
-Methane      74-82-8   190.56        0.02  4600000       10000  9.9e-05      3e-06
-  
+  ```
+    Units are Kelvin,Pascals,and cubic meters/mol
+  Compound     CAS_ID        Tc    Tc_Error       Pc    Pc_Error        Vc    Vc_Error
+  -----------  --------  ------  ----------  -------  ----------  --------  ----------
+  Acetic acid  64-19-7   593           2     5790000       30000  0.000171     2e-06
+  Acetone      67-64-1   508.1         0.2   4700000      100000  0.000221     2e-05
+  Benzene      71-43-2   562           0.1   4900000       20000  0.000257     1.1e-05
+  Methane      74-82-8   190.56        0.02  4600000       10000  9.9e-05      3e-06
+  ```
+  We can no start to use the EOS formulas.
   ```
   # Create variables to store the physical parameters. 
   t = 500
