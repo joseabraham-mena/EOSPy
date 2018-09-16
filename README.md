@@ -67,5 +67,41 @@ It can be a fun and easy way to check your own hand calculations.
   v = 0.1 
   n = 1
   ```
+  Now we can create variables that hold the values that vdW will calculate for us. Now we can call tabulate_data() to 
+  display our results.
+  
+  ```
+  parameters = vdW.parameters(compounds)
+  temperatures = vdW.temperature(compounds,p,n,v)
+  pressures = vdW.pressure(compounds,t,n,v)
 
-
+  vdW.tabulate_data(parameters)
+  vdW.tabulate_data(temperatures)
+  vdW.tabulate_data(pressures)
+  ``` 
+  The results are:
+  ```
+      Compound            a            b
+    -----------  --------  -----------
+    Acetic acid  1.77113   0.00010644
+    Acetone      1.60185   0.000112352
+    Benzene      1.87974   0.000119198
+    Methane      0.230211  4.30529e-05
+    
+    Units are Kelvin,Pascals,and cubic meters/mol
+    Compound       Temperature
+    -----------  -------------
+    Acetic acid        1219.53
+    Acetone            1219.26
+    Benzene            1219.51
+    Methane            1218.46
+    
+    Units are Kelvin,Pascals,and cubic meters/mol
+    Compound       Pressure
+    -----------  ----------
+    Acetic acid     41438
+    Acetone         41457.4
+    Benzene         41432.4
+    Methane         41565.7
+```
+  
