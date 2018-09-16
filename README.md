@@ -1,7 +1,7 @@
 # EOSPy
 
-This project started with me challenging myself to mix coding (which I love) and Chemical Engineering (what I also love).
-I hope to sometime soon work with a big company developing Chemical Engineering software such as HYSYS, or UNISIM, or ChemCad. 
+This project started with me challenging myself to mix coding (which I love) and Chemical Engineering (which I also love).
+I hope to sometime soon work with a big Chemical Engineering software company developing their simulation software (think HYSYS, or UNISIM, or ChemCad.) 
 
 This library is meant to be used as a tool to learn, I do not intend it to be used to design chemical plants or home experiments. 
 It can be a fun and easy way to check your own hand calculations. 
@@ -58,12 +58,14 @@ It can be a fun and easy way to check your own hand calculations.
   Benzene      71-43-2   562           0.1   4900000       20000  0.000257     1.1e-05
   Methane      74-82-8   190.56        0.02  4600000       10000  9.9e-05      3e-06
   ```
-  We can no start to use the EOS formulas.
+  We can now start to use the EOS formulas. First we will create variables to hold the value of our physical parameters.
+  The units here are important, EOSPy uses Kelvin, Pascals, cubic meters, and moles.
   ```
   # Create variables to store the physical parameters. 
   t = 500
   p = 101325
   v = 0.1 
+  n = 1
   ```
 
 
